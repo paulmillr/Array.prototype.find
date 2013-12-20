@@ -1,5 +1,5 @@
 {
-  "name": "array.prototype.find",
+  "name": "Array.prototype.find",
   "repo": "paulmillr/Array.prototype.find",
   "description": "Array.prototype.find ES6 polyfill.",
   "version": "0.1.0",

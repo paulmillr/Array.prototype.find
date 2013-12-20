@@ -8,12 +8,15 @@ For browsers and node.js.
 * Just include repo before your scripts.
 * `npm install array.prototype.find` if you’re using node.js.
 * `component install paulmillr/Array.prototype.find` if you’re using [component(1)](https://github.com/component/component).
-* `bower install array.prototype.find` if you’re using [Twitter Bower](http://bower.io).
+* `bower install Array.prototype.find` if you’re using [Twitter Bower](http://bower.io).
 
 ## Usage
 
 * `Array.prototype.find(predicate[, thisArg])` returns first item that matches `predicate` function.
-* `predicate(value, index, collection)`
+* `predicate(value, index, collection)`: takes three arguments
+    * `value`: current collection element
+    * `index`: current collection element index
+    * `collection`: the collection
 
 Node.js:
 
@@ -30,7 +33,7 @@ require('Array.prototype.find');
 
 Code example:
 
-```
+```javascript
 // Default:
 [1, 5, 10, 15].find(function(a) {return a > 9;}) // 10
 ```
