@@ -17,10 +17,14 @@
   };
 
   if (Object.defineProperty) {
-    Object.defineProperty(Array.prototype, 'find', {
-      value: find, configurable: true, enumerable: false, writable: true
-    });
-  } else {
+    try {
+      Object.defineProperty(Array.prototype, 'find', {
+        value: find, configurable: true, enumerable: false, writable: true
+      });
+    } catch(e) {}
+  }
+
+  if (!Array.prototype.find) {
     Array.prototype.find = find;
   }
 })(this);
