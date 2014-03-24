@@ -1,6 +1,8 @@
 // Array.prototype.find - MIT License (c) 2013 Paul Miller <http://paulmillr.com>
 // For all details and docs: https://github.com/paulmillr/array.prototype.find
 (function(globals){
+  if (Array.prototype.find) return;
+
   var find = function(predicate) {
     var list = Object(this);
     var length = list.length >>> 0; // ES.ToUint32;
