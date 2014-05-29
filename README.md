@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/duncanhall/Array.prototype.find.svg?branch=master)](https://travis-ci.org/duncanhall/Array.prototype.find)
+
 # ES6 `Array.prototype.find` polyfill
 
 Simple ES6 [Array.prototype.find](http://people.mozilla.org/%7Ejorendorff/es6-draft.html#sec-array.prototype.find) polyfill for older environments taken from [es6-shim](https://github.com/paulmillr/es6-shim).
