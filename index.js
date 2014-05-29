@@ -1,5 +1,6 @@
 // Array.prototype.find - MIT License (c) 2013 Paul Miller <http://paulmillr.com>
 // For all details and docs: https://github.com/paulmillr/array.prototype.find
+// Fixes and tests supplied by Duncan Hall <http://duncanhall.net> 
 (function(globals){
   if (Array.prototype.find) return;
 
