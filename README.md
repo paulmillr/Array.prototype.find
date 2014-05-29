@@ -38,6 +38,10 @@ Code example:
 [1, 5, 10, 15].find(function(a) {return a > 9;}) // 10
 ```
 
+## Acknowledgements
+
+Tests, fixes and travis support added by [_duncanhall](http://twitter.com/_duncanhall)
+
 ## License
 
 The MIT License (MIT)
