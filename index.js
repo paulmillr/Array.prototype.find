@@ -13,10 +13,8 @@
     }
     var thisArg = arguments[1];
     for (var i = 0, value; i < length; i++) {
-      if (i in list) {
-        value = list[i];
-        if (predicate.call(thisArg, value, i, list)) return value;
-      }
+      value = list[i];
+      if (predicate.call(thisArg, value, i, list)) return value;
     }
     return undefined;
   };
