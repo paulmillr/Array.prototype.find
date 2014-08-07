@@ -56,14 +56,15 @@ var runTests = function () {
         });
 
         it('should work with a sparse array', function() {
-          var obj = [1,,undefined];
+          var obj = [1, , undefined];
+          expect(1 in obj).to.equal(false);
           var seen = [];
-          var found = Array.prototype.find.call(obj, function(item, idx) {
+          var found = obj.find(function(item, idx) {
             seen.push([idx, item]);
             return false;
           });
           expect(found).to.equal(undefined);
-          expect(seen).to.eql([[0,1],[2,undefined]]);
+          expect(seen).to.eql([[0, 1], [1, undefined], [2, undefined]]);
         });
 
         it('should work with a sparse array-like object', function() {
@@ -74,10 +75,10 @@ var runTests = function () {
             return false;
           });
           expect(found).to.equal(undefined);
-          expect(seen).to.eql([[0,1],[2,undefined]]);
+          expect(seen).to.eql([[0, 1], [1, undefined], [2, undefined]]);
         });
       });
-  })
+  });
 };
 
 
