@@ -29,7 +29,7 @@
     "url": "https://github.com/paulmillr/Array.prototype.find/issues"
   },
   "devDependencies": {
-    "chai": "~1.9.1",
+    "chai": "~1.9.2",
     "mocha": "~1.21.4"
   }
 }
