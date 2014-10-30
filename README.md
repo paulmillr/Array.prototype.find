@@ -30,7 +30,7 @@ Browser:
 
 ```javascript
 // component(1)
-require('Array.prototype.find');
+require('array.prototype.find');
 ```
 
 Code example:
