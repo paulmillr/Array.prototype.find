@@ -17,13 +17,12 @@
     if (typeof predicate !== 'function' || Object.prototype.toString.call(predicate) !== '[object Function]') {
       throw new TypeError('Array#find: predicate must be a function');
     }
-    if (length === 0) return undefined;
+    if (length <= 0) return;
     var thisArg = arguments[1];
     for (var i = 0, value; i < length; i++) {
       value = list[i];
       if (predicate.call(thisArg, value, i, list)) return value;
     }
-    return undefined;
   };
 
   if (Object.defineProperty) {
