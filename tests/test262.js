@@ -21,23 +21,6 @@ describe('Test 262: Array.prototype.find', function () {
         }
     };
 
-    var supportsGetters = (function () {
-        var value = 2;
-        var obj = {};
-
-        if (!Object.defineProperty) {
-            return false;
-        }
-        Object.defineProperty(obj, 'foo', {
-            get: function () {
-                return value * 2;
-            }
-        });
-        value = 4;
-
-        return obj.foo === 8;
-    }());
-
     /*
     Test Array.prototype.find_callable-predicate ignored: Uses Proxy and arrow functions
     */
