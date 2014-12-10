@@ -183,39 +183,6 @@ describe('Test 262: Array.prototype.find', function () {
         });
         
     });
-    specify('Array.prototype.find_remove-after-start', function () {
-        // Copyright (c) 2014 Matthew Meyers. All rights reserved.
-        // This code is governed by the BSD license found in the LICENSE file.
-        
-        /*---
-        description: >
-            Elements removed from array after find has been called should not
-            be visited
-        ---*/
-        
-        [1, 'string', 2].find(function (v, i, arr) {
-            var stringIndex = arr.indexOf('string');
-            if (stringIndex !== -1) delete arr[stringIndex];
-            if (v === 'string') {
-                $ERROR('#1: \'string\' should not exist, it has been deleted');
-            }
-            if (v === undefined) {
-                $ERROR('#2: deleted element should not be visited');
-            }
-        });
-        
-        [1, 'string', 2].find(function (v, i, arr) {
-            var stringIndex = arr.indexOf('string');
-            if (stringIndex !== -1) arr.splice(stringIndex, 1);
-            if (v === 'string') {
-                $ERROR('#3: \'string\' should not exist, it has been deleted');
-            }
-            if (v === undefined) {
-                $ERROR('#4: deleted element should not be visited');
-            }
-        });
-        
-    });
     specify('Array.prototype.find_return-found-value', function () {
         // Copyright (c) 2014 Matthew Meyers. All rights reserved.
         // This code is governed by the BSD license found in the LICENSE file.
@@ -244,30 +211,6 @@ describe('Test 262: Array.prototype.find', function () {
             if (a !== testVals[i]) {
                 $ERROR('#' + (i + 1) + ': a !== testVals[' + i + ']. Actual: ' + a);
             }
-        }
-        
-    });
-    specify('Array.prototype.find_skip-empty', function () {
-        // Copyright (c) 2014 Matthew Meyers. All rights reserved.
-        // This code is governed by the BSD license found in the LICENSE file.
-        
-        /*---
-        description: >
-            predicate is called only for elements of the array which actually
-            exist; it is not called for missing elements of the array
-        ---*/
-        
-        var a = [];
-        
-        a[10] = 1;
-        a[11] = 2;
-        
-        var b = a.find(function (v) {
-            return v !== 1;
-        });
-        
-        if (b !== 2) {
-            $ERROR('#1: b !== 2. Actual: ' + b);
         }
         
     });

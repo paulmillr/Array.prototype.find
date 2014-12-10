@@ -13,7 +13,7 @@
     // matter because it will iterate between 0 and length
     // * It only casts to Integer (with |0) after making sure it has the maximum
     // integer or |0 will cast Infinity to 0
-    var length = Math.min(Number(length), maxInteger) | 0;
+    var length = Math.min(Number(list.length), maxInteger) | 0;
     if (typeof predicate !== 'function' || Object.prototype.toString.call(predicate) !== '[object Function]') {
       throw new TypeError('Array#find: predicate must be a function');
     }
@@ -21,7 +21,7 @@
     var thisArg = arguments[1];
     for (var i = 0, value; i < length; i++) {
       value = list[i];
-      if (i in list && predicate.call(thisArg, value, i, list)) return value;
+      if (predicate.call(thisArg, value, i, list)) return value;
     }
     return undefined;
   };

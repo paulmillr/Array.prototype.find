@@ -64,7 +64,7 @@ var runTests = function () {
             return false;
           });
           expect(found).to.equal(undefined);
-          expect(seen).to.eql([[0, 1], [2, undefined]]);
+          expect(seen).to.eql([[0, 1], [1, undefined], [2, undefined]]);
         });
 
         it('should work with a sparse array-like object', function() {
@@ -75,7 +75,7 @@ var runTests = function () {
             return false;
           });
           expect(found).to.equal(undefined);
-          expect(seen).to.eql([[0, 1], [2, undefined]]);
+          expect(seen).to.eql([[0, 1], [1, undefined], [2, undefined]]);
         });
       });
   });
