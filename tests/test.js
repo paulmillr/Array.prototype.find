@@ -1,6 +1,6 @@
 
 var expect = require("chai").expect;
-var arrayFind = require('../index');
+var arrayFind = require('../array-prototype-find');
 
 var runTests = function () {
 

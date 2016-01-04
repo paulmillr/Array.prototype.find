@@ -9,7 +9,7 @@
     "ecmascript 6",
     "polyfill"
   ],
-  "main": "index.js",
+  "main": "detect.js",
   "scripts": {
     "test": "mocha tests/*.js"
   },

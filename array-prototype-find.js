@@ -1,9 +1,7 @@
 // Array.prototype.find - MIT License (c) 2013 Paul Miller <http://paulmillr.com>
 // For all details and docs: https://github.com/paulmillr/array.prototype.find
 (function(globals){
-  if (Array.prototype.find) return;
-
-  var find = function(predicate) {
+  Array.prototype.find = function find (predicate) {
     var list = Object(this);
     var length = list.length < 0 ? 0 : list.length >>> 0; // ES.ToUint32;
     if (length === 0) return undefined;
@@ -24,9 +22,5 @@
         value: find, configurable: true, enumerable: false, writable: true
       });
     } catch(e) {}
-  }
-
-  if (!Array.prototype.find) {
-    Array.prototype.find = find;
   }
 })(this);

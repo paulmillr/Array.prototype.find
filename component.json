@@ -7,8 +7,9 @@
   "dependencies": {},
   "development": {},
   "license": "MIT",
-  "main": "index.js",
+  "main": "detect.js",
   "scripts": [
-    "index.js"
+    "detect.js",
+    "array-prototype-find.js"
   ]
 }
