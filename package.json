@@ -11,7 +11,7 @@
   ],
   "main": "shim.js",
   "scripts": {
-    "test": "mocha tests/*.js"
+    "test": "es-shim-api --bound && mocha tests/*.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "url": "https://github.com/paulmillr/Array.prototype.find/issues"
   },
   "devDependencies": {
+    "@es-shims/api": "^1.0.0",
     "chai": "~1.9.1",
     "mocha": "~1.21.4"
   },
