@@ -7,9 +7,11 @@
   "dependencies": {},
   "development": {},
   "license": "MIT",
-  "main": "detect.js",
+  "main": "shim.js",
   "scripts": [
-    "detect.js",
-    "array-prototype-find.js"
+    "polyfill.js",
+    "implementation.js",
+    "shim.js",
+    "index.js"
   ]
 }
