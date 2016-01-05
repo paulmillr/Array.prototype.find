@@ -1,6 +1,6 @@
 {
   "name": "array.prototype.find",
-  "main": "shim.js",
+  "main": "index.js",
   "version": "1.0.0",
   "homepage": "https://github.com/paulmillr/Array.prototype.find",
   "authors": [

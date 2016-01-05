@@ -9,7 +9,7 @@
     "ecmascript 6",
     "polyfill"
   ],
-  "main": "shim.js",
+  "main": "index.js",
   "scripts": {
     "test": "es-shim-api --bound && mocha tests/*.js"
   },

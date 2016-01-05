@@ -7,7 +7,7 @@
   "dependencies": {},
   "development": {},
   "license": "MIT",
-  "main": "shim.js",
+  "main": "index.js",
   "scripts": [
     "polyfill.js",
     "implementation.js",
