@@ -1,8 +1,7 @@
 
 var expect = require("chai").expect;
-var arrayFind = require('../index').implementation;
 
-var runTests = function () {
+var runTests = function (arrayFind) {
 
   describe('Array', function(){
 
@@ -81,11 +80,28 @@ var runTests = function () {
   });
 };
 
+var find = require('../index');
 
-describe('clean Object.prototype', runTests);
+describe('polyfill', function() {
+  describe('clean Object.prototype', function() {
+    runTests(find.implementation);
+  });
 
-describe('polluted Object.prototype', function() {
-  Object.prototype[1] = 42;
-  runTests();
-  delete Object.prototype[1];
+  describe('polluted Object.prototype', function() {
+    Object.prototype[1] = 42;
+    runTests(find.implementation);
+    delete Object.prototype[1];
+  });
+});
+
+describe('shim', function() {
+  describe('clean Object.prototype', function() {
+    runTests(find.implementation);
+  });
+
+  describe('polluted Object.prototype', function() {
+    Object.prototype[1] = 42;
+    runTests(find.implementation);
+    delete Object.prototype[1];
+  });
 });
