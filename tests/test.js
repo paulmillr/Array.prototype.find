@@ -95,13 +95,16 @@ describe('polyfill', function() {
 });
 
 describe('shim', function() {
+	find.shim();
+	var implementation = Array.prototype.find;
+
 	describe('clean Object.prototype', function() {
-		runTests(find.implementation);
+		runTests(implementation);
 	});
 
 	describe('polluted Object.prototype', function() {
 		Object.prototype[1] = 42;
-		runTests(find.implementation);
+		runTests(implementation);
 		delete Object.prototype[1];
 	});
 });
