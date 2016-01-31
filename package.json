@@ -11,7 +11,8 @@
 	],
 	"main": "index.js",
 	"scripts": {
-		"test": "es-shim-api --bound && mocha tests/*.js"
+		"tests-only": "es-shim-api --bound && mocha tests/*.js",
+		"test": "npm run tests-only"
 	},
 	"repository": {
 		"type": "git",
