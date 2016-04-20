@@ -8,9 +8,7 @@ For browsers and node.js.
 
 ## Installation
 * Just include repo before your scripts.
-* `npm install array.prototype.find` if you’re using node.js.
-* `component install paulmillr/Array.prototype.find` if you’re using [component(1)](https://github.com/component/component).
-* `bower install Array.prototype.find` if you’re using [Twitter Bower](http://bower.io).
+* `npm install array.prototype.find`
 
 ## Usage
 
@@ -20,16 +18,12 @@ For browsers and node.js.
     * `index`: current collection element index
     * `collection`: the collection
 
-Node.js:
-
 ```javascript
-require('array.prototype.find').shim();
-```
+// as a function
+var find = require('array.prototype.find');
+find([1, 2], function (x) { return x === 2; }); // 2
 
-Browser:
-
-```javascript
-// component(1)
+// to shim it
 require('array.prototype.find').shim();
 ```
 
@@ -37,7 +31,7 @@ Code example:
 
 ```javascript
 // Default:
-[1, 5, 10, 15].find(function(a) {return a > 9;}) // 10
+[1, 5, 10, 15].find(function (a) { return a > 9; }) // 10
 ```
 
 ## Acknowledgements
