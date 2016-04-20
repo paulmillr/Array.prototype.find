@@ -23,14 +23,14 @@ For browsers and node.js.
 Node.js:
 
 ```javascript
-require('array.prototype.find');
+require('array.prototype.find').shim();
 ```
 
 Browser:
 
 ```javascript
 // component(1)
-require('array.prototype.find');
+require('array.prototype.find').shim();
 ```
 
 Code example:
