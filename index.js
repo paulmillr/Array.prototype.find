@@ -11,7 +11,8 @@ var slice = Array.prototype.slice;
 
 var boundFindShim = function find(array, predicate) {
 	ES.RequireObjectCoercible(array);
-	return implementation.apply(array, predicate);
+	var args = Array.prototype.slice.call(arguments, 1);
+	return implementation.apply(array, args);
 };
 
 define(boundFindShim, {

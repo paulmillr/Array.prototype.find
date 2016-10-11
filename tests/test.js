@@ -108,3 +108,21 @@ describe('shim', function() {
 		delete Object.prototype[1];
 	});
 });
+
+describe('single function', function() {
+	var findAsFunction = function(func) {
+		var args = Array.prototype.slice.call(arguments);
+		args.unshift(this);
+		return find.apply(undefined, args);
+	}
+
+	describe('clean Object.prototype', function() {
+		runTests(findAsFunction);
+	});
+
+	describe('polluted Object.prototype', function() {
+		Object.prototype[1] = 42;
+		runTests(findAsFunction);
+		delete Object.prototype[1];
+	});
+});
