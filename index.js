@@ -9,15 +9,15 @@ var shim = require('./shim');
 
 var slice = Array.prototype.slice;
 
-var boundFindShim = function find(array, predicate) {
+var boundFindShim = function find(array, predicate) { // eslint-disable-line no-unused-vars
 	ES.RequireObjectCoercible(array);
-	var args = Array.prototype.slice.call(arguments, 1);
+	var args = slice.call(arguments, 1);
 	return implementation.apply(array, args);
 };
 
 define(boundFindShim, {
-	implementation: implementation,
 	getPolyfill: getPolyfill,
+	implementation: implementation,
 	shim: shim
 });
 
