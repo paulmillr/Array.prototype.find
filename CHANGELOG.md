@@ -1,3 +1,8 @@
+# 2.0.1
+ - [Fix] use call instead of apply in bound entry point function (#20)
+ - [Tests] up to `node` `v7.0`, `v6.9`, `v5.12`; improve test matrix
+ - [Tests] add `npm run lint`
+
 # 2.0.0
  - [Breaking] implement es-shim API (#15)
  - [Fix] use ToLength, not ToUint32 (#15)
