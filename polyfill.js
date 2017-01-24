@@ -6,7 +6,7 @@ module.exports = function getPolyfill() {
   // eslint-disable-next-line no-sparse-arrays
 	var implemented = Array.prototype.find && [, 1].find(function () {
 		return true;
-	}) === 1;
+	}) !== 1;
 
   // eslint-disable-next-line global-require
 	return implemented ? Array.prototype.find : require('./implementation');
