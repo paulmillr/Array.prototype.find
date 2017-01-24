@@ -1,3 +1,6 @@
+# 2.0.3
+ - [Fix] again: don’t needlessly shim `Array#find` (#22)
+
 # 2.0.2
  - [Fix] don’t needlessly shim `Array#find` (#22)
  - [Deps] update `es-abstract`
