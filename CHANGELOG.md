@@ -1,3 +1,9 @@
+# 2.0.2
+ - [Fix] don’t needlessly shim `Array#find` (#22)
+ - [Deps] update `es-abstract`
+ - [Dev Deps] update `@es-shims/api`, `mocha`, `eslint`, `@ljharb/eslint-config`
+ - [Tests] up to `node` `v7.4`, `v4.7`; improve test matrix
+
 # 2.0.1
  - [Fix] use call instead of apply in bound entry point function (#20)
  - [Tests] up to `node` `v7.0`, `v6.9`, `v5.12`; improve test matrix
