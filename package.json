@@ -1,6 +1,6 @@
 {
 	"name": "array.prototype.find",
-	"version": "2.0.3",
+	"version": "2.0.4",
 	"description": "Array.prototype.find ES6 polyfill.",
 	"keywords": [
 		"Array.prototype.find",

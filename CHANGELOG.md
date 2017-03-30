@@ -1,3 +1,6 @@
+# 2.0.4
+ - [Performance] the entry point should use the native function when compliant
+
 # 2.0.3
  - [Fix] again: don’t needlessly shim `Array#find` (#22)
 
