@@ -9,14 +9,18 @@ module.exports = function find(predicate) {
 		throw new TypeError('Array#find: predicate must be a function');
 	}
 	if (length === 0) {
-		return undefined;
+		return void 0;
 	}
-	var thisArg = arguments[1];
+	var thisArg;
+	if (arguments.length > 0) {
+		thisArg = arguments[1];
+	}
+
 	for (var i = 0, value; i < length; i++) {
 		value = list[i];
 		if (ES.Call(predicate, thisArg, [value, i, list])) {
 			return value;
 		}
 	}
-	return undefined;
+	return void 0;
 };
