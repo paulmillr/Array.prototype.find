@@ -4,7 +4,7 @@ var ES = require('es-abstract/es6');
 
 module.exports = function find(predicate) {
 	var list = ES.ToObject(this);
-	var length = ES.ToInteger(ES.ToLength(list.length));
+	var length = ES.ToLength(list.length);
 	if (!ES.IsCallable(predicate)) {
 		throw new TypeError('Array#find: predicate must be a function');
 	}
