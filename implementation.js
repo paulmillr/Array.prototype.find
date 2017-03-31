@@ -18,7 +18,8 @@ module.exports = function find(predicate) {
 
 	for (var i = 0, value; i < length; i++) {
 		value = list[i];
-		if (ES.Call(predicate, thisArg, [value, i, list])) {
+		// inlined for performance: if (ES.Call(predicate, thisArg, [value, i, list])) {
+		if (predicate.apply(thisArg, [value, i, list])) {
 			return value;
 		}
 	}
