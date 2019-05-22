@@ -33,10 +33,10 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
-		"@ljharb/eslint-config": "^10.0.0",
+		"@ljharb/eslint-config": "^13.1.1",
 		"chai": "^3.5.0",
-		"eslint": "^3.14.0",
-		"mocha": "^3.2.0"
+		"eslint": "^5.16.0",
+		"mocha": "^3.5.3"
 	},
 	"dependencies": {
 		"define-properties": "^1.1.3",

@@ -24,7 +24,7 @@ var runTests = function (arrayFind) {
 			});
 
 			it('should throw TypeError when function was not passed', function () {
-				expect(function () { list.find(); }).to.throw(TypeError);
+				expect(function () { list.find(); }).to['throw'](TypeError);
 			});
 
 			it('should receive all three parameters', function () {
