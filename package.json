@@ -39,7 +39,7 @@
 		"@ljharb/eslint-config": "^10.0.0"
 	},
 	"dependencies": {
-		"define-properties": "^1.1.2",
-		"es-abstract": "^1.7.0"
+		"define-properties": "^1.1.3",
+		"es-abstract": "^1.13.0"
 	}
 }
