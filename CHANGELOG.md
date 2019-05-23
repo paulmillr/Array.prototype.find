@@ -1,3 +1,14 @@
+# 2.1.0
+ - [New] add `auto` entry point
+ - [Performance] Remove unnecessary `ToInteger` call.
+ - [Performance] inline `ES.Call` since `IsCallable` is already checked prior to the loop.
+ - [Performance] avoid checking `arguments` indexes beyond `arguments.length`
+ - [meta] Add LICENSE file (#25)
+ - [Deps] update `define-properties`, `es-abstract`
+ - [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `chai`, `mocha`
+ - [Tests] fix matrix; use `nvm install-latest-npm`, test up to latest node
+ - [Tests] add `npm run posttest`
+
 # 2.0.4
  - [Performance] the entry point should use the native function when compliant
 
