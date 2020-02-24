@@ -23,6 +23,9 @@
 		"url": "git://github.com/paulmillr/Array.prototype.find.git"
 	},
 	"author": "Paul Miller <http://paulmillr.com>",
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"contributors": [
 		{
 			"name": "Duncan Hall",
