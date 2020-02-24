@@ -1,3 +1,10 @@
+# 2.1.1
+ - [Refactor] Only require the parts of es-abstract that are used (77% bundle size decrease) (#28)
+ - [meta] add `funding` field
+ - [Tests] use shared travis-ci configs
+ - [Tests] only run `aud` on prod deps
+ - [Dev Deps] update `eslint`, `@ljharb/eslint-config`; add `safe-publish-latest`
+
 # 2.1.0
  - [New] add `auto` entry point
  - [Performance] Remove unnecessary `ToInteger` call.
