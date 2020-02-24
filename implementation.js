@@ -1,11 +1,13 @@
 'use strict';
 
-var ES = require('es-abstract/es6');
+var ToObject = require('es-abstract/2019/ToObject');
+var ToLength = require('es-abstract/2019/ToLength');
+var IsCallable = require('es-abstract/2019/IsCallable');
 
 module.exports = function find(predicate) {
-	var list = ES.ToObject(this);
-	var length = ES.ToLength(list.length);
-	if (!ES.IsCallable(predicate)) {
+	var list = ToObject(this);
+	var length = ToLength(list.length);
+	if (!IsCallable(predicate)) {
 		throw new TypeError('Array#find: predicate must be a function');
 	}
 	if (length === 0) {
@@ -18,7 +20,7 @@ module.exports = function find(predicate) {
 
 	for (var i = 0, value; i < length; i++) {
 		value = list[i];
-		// inlined for performance: if (ES.Call(predicate, thisArg, [value, i, list])) {
+		// inlined for performance: if (Call(predicate, thisArg, [value, i, list])) {
 		if (predicate.apply(thisArg, [value, i, list])) {
 			return value;
 		}

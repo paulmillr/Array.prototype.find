@@ -1,7 +1,7 @@
 'use strict';
 
 var define = require('define-properties');
-var ES = require('es-abstract/es6');
+var RequireObjectCoercible = require('es-abstract/2019/RequireObjectCoercible');
 
 var implementation = require('./implementation');
 var getPolyfill = require('./polyfill');
@@ -12,7 +12,7 @@ var slice = Array.prototype.slice;
 var polyfill = getPolyfill();
 
 var boundFindShim = function find(array, predicate) { // eslint-disable-line no-unused-vars
-	ES.RequireObjectCoercible(array);
+	RequireObjectCoercible(array);
 	var args = slice.call(arguments, 1);
 	return polyfill.apply(array, args);
 };
