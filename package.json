@@ -16,7 +16,7 @@
 		"pretest": "npm run lint",
 		"tests-only": "es-shim-api --bound && mocha tests/*.js",
 		"test": "npm run tests-only",
-		"posttest": "npx aud"
+		"posttest": "npx aud --production"
 	},
 	"repository": {
 		"type": "git",
