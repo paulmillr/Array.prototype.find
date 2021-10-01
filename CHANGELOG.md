@@ -1,3 +1,11 @@
+# 2.1.2
+ - [Deps] use `call-bind` for Array slice
+ - [Deps] update `es-abstract`
+ - [readme] update badges
+ - [meta] update scripts
+ - [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`
+ - [Tests] migrate travis-ci to Github Actions
+
 # 2.1.1
  - [Refactor] Only require the parts of es-abstract that are used (77% bundle size decrease) (#28)
  - [meta] add `funding` field
