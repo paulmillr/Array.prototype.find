@@ -50,6 +50,6 @@
 	},
 	"dependencies": {
 		"define-properties": "^1.1.3",
-		"es-abstract": "^1.17.4"
+		"es-abstract": "^1.19.0"
 	}
 }
