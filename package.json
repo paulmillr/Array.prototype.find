@@ -39,14 +39,14 @@
 		"url": "https://github.com/paulmillr/Array.prototype.find/issues"
 	},
 	"devDependencies": {
-		"@es-shims/api": "^2.2.1",
-		"@ljharb/eslint-config": "^18.0.0",
+		"@es-shims/api": "^2.2.3",
+		"@ljharb/eslint-config": "^20.0.0",
 		"aud": "^1.1.5",
 		"chai": "^3.5.0",
-		"eslint": "^7.32.0",
+		"eslint": "^8.4.1",
 		"in-publish": "^2.0.1",
 		"mocha": "^3.5.3",
-		"safe-publish-latest": "^1.1.4"
+		"safe-publish-latest": "^2.0.0"
 	},
 	"dependencies": {
 		"call-bind": "^1.0.2",
