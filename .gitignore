@@ -28,3 +28,6 @@ Icon?
 npm-shrinkwrap.json
 package-lock.json
 yarn.lock
+
+coverage
+.nyc_output

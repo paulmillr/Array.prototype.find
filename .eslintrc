@@ -20,6 +20,16 @@
 			]
 		}],
 		"no-magic-numbers": 0,
-		"object-curly-newline": 0,
 	},
+
+	"overrides": [
+		{
+			"files": "test/**",
+			"rules": {
+				"id-length": 0,
+				"max-lines-per-function": 0,
+				"no-invalid-this": 0,
+			},
+		}
+	]
 }
