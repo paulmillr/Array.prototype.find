@@ -9,7 +9,15 @@
 		"max-statements-per-line": [2, { "max": 2 }],
 		"multiline-comment-style": 0,
 		"new-cap": [2, {
-			"capIsNewExceptions": ["ToInteger", "ToObject", "ToString", "ToLength", "IsCallable", "Call", "RequireObjectCoercible"]
+			"capIsNewExceptions": [
+				"Call",
+				"IsCallable",
+				"RequireObjectCoercible",
+				"ToInteger",
+				"ToLength",
+				"ToObject",
+				"ToString",
+			]
 		}],
 		"no-magic-numbers": 0,
 		"object-curly-newline": 0,
