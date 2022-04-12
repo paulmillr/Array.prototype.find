@@ -1,3 +1,11 @@
+# 2.2.0
+ - [New] `shim`/`auto`: add `find` to `Symbol.unscopables`
+ - [Deps] update `es-abstract`
+ - [actions] reuse common workflows
+ - [actions] update codecov uploader
+ - [Tests] migrate to tape
+ - [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`, `aud`, `safe-publish-latest`
+
 # 2.1.2
  - [Deps] use `call-bind` for Array slice
  - [Deps] update `es-abstract`
