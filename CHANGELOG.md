@@ -1,3 +1,10 @@
+# 2.2.1
+ - [Deps] update `define-properties`, `es-abstract`
+ - [actions] update rebase action to use reusable workflow
+ - [meta] use `npmignore` to autogenerate an npmignore file
+ - [meta] create FUNDING.yml
+ - [Dev Deps] update `aud`, `functions-have-names`, `tape`
+
 # 2.2.0
  - [New] `shim`/`auto`: add `find` to `Symbol.unscopables`
  - [Deps] update `es-abstract`
