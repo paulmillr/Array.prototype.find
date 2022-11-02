@@ -1,8 +1,8 @@
 'use strict';
 
-var ToObject = require('es-abstract/2021/ToObject');
-var ToLength = require('es-abstract/2021/ToLength');
-var IsCallable = require('es-abstract/2021/IsCallable');
+var ToObject = require('es-abstract/2022/ToObject');
+var ToLength = require('es-abstract/2022/ToLength');
+var IsCallable = require('es-abstract/2022/IsCallable');
 
 module.exports = function find(predicate) {
 	var list = ToObject(this);
