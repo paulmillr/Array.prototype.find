@@ -57,8 +57,8 @@
 	},
 	"dependencies": {
 		"call-bind": "^1.0.2",
-		"define-properties": "^1.1.4",
-		"es-abstract": "^1.20.4",
+		"define-properties": "^1.2.0",
+		"es-abstract": "^1.21.1",
 		"es-shim-unscopables": "^1.0.0"
 	},
 	"auto-changelog": {
