@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.2](https://github.com/es-shims/Array.prototype.find/compare/v2.2.1...v2.2.2) - 2023-08-27
+
+### Commits
+
+- [meta] add `auto-changelog` [`90ef840`](https://github.com/es-shims/Array.prototype.find/commit/90ef8406f1a3bea1d863796bfe0ad8a6f7c715e3)
+- [Deps] update `es-abstract` [`c83a92f`](https://github.com/es-shims/Array.prototype.find/commit/c83a92f20b4277eaac8d7b858c23daa1790be347)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `tape` [`4f76839`](https://github.com/es-shims/Array.prototype.find/commit/4f76839dd1b7f5596a338921bc725959b316e99a)
+- [Dev Deps] update `@ljharb/eslint-config`, `@es-shims/api`, `aud`, `tape` [`1997871`](https://github.com/es-shims/Array.prototype.find/commit/19978718a422c3ea13797d095b2c3a8bf1b62a8f)
+- [Deps] update `define-properties`, `es-abstract` [`28eb0a6`](https://github.com/es-shims/Array.prototype.find/commit/28eb0a6f235d5cf5be9437e8a9d0f3b2d18bd77e)
+- [meta] create SECURITY.md [`dba046f`](https://github.com/es-shims/Array.prototype.find/commit/dba046ffcabe15c05c980b4c71c8adccceb1d1e9)
+- [meta] fix npmrc config [`574c8fd`](https://github.com/es-shims/Array.prototype.find/commit/574c8fdee7b4fbb3ece7f242b69b7ce1a1ac3968)
+
 <!-- auto-changelog-above -->
 
 # 2.2.1
