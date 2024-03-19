@@ -1,6 +1,6 @@
 'use strict';
 
-var ToObject = require('es-abstract/2023/ToObject');
+var ToObject = require('es-object-atoms/ToObject');
 var ToLength = require('es-abstract/2023/ToLength');
 var IsCallable = require('es-abstract/2023/IsCallable');
 
