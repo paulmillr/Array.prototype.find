@@ -58,7 +58,7 @@
 	"dependencies": {
 		"call-bind": "^1.0.7",
 		"define-properties": "^1.2.1",
-		"es-abstract": "^1.22.4",
+		"es-abstract": "^1.23.2",
 		"es-object-atoms": "^1.0.0",
 		"es-shim-unscopables": "^1.0.2"
 	},
