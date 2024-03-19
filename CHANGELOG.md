@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.3](https://github.com/es-shims/Array.prototype.find/compare/v2.2.2...v2.2.3) - 2024-03-18
+
+### Commits
+
+- [actions] remove redundant finisher [`5699c0f`](https://github.com/es-shims/Array.prototype.find/commit/5699c0fd952c7e455b1fbe855ab8b6d1690d1e38)
+- [Deps] update `call-bind`, `define-properties`, `es-abstract`, `es-shim-unscopables` [`01d9650`](https://github.com/es-shims/Array.prototype.find/commit/01d9650f299fc2aed1bba917fa047874b921b518)
+- [Deps] update `es-abstract` [`9d82ddd`](https://github.com/es-shims/Array.prototype.find/commit/9d82dddadfc46d914bec2b0873fc66e8e26a9a4b)
+- [Dev Deps] update `aud`, `npmignore`, `tape` [`b02d54e`](https://github.com/es-shims/Array.prototype.find/commit/b02d54e3426766a2bca083f2a6323ebc87d3b572)
+- [Refactor] use `es-object-atoms` where possible [`1f05f62`](https://github.com/es-shims/Array.prototype.find/commit/1f05f62dd23747ea51d4e599efb71e2ca3ccb650)
+- [meta] add missing `engines.node` [`b252946`](https://github.com/es-shims/Array.prototype.find/commit/b252946360156e5d3d09d4ed59224c3cbf14967c)
+- [Dev Deps] update `tape` [`01ac3e8`](https://github.com/es-shims/Array.prototype.find/commit/01ac3e8b2d4b2566dd85f0d1b2dc4cda68693d7f)
+
 ## [v2.2.2](https://github.com/es-shims/Array.prototype.find/compare/v2.2.1...v2.2.2) - 2023-08-27
 
 ### Commits
